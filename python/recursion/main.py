@@ -1,3 +1,4 @@
+from binary_search import main as binary_main
 from factorial import main as fact_main
 from lines import main as draw_main
 
@@ -5,10 +6,12 @@ from lines import main as draw_main
 def main():
     menu_text = "1. Calculate factorial\n" \
                 "2. Draw lines\n" \
+                "3. Binary search\n" \
                 "0. Exit"
     menu = {
         1: fact_main,
-        2: draw_main
+        2: draw_main,
+        3: binary_main
     }
 
     while True:
