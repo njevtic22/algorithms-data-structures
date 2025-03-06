@@ -1,4 +1,4 @@
-from random import randint
+from util import generate_sorted_array
 
 
 def search(data, target, low, high):
@@ -13,20 +13,6 @@ def search(data, target, low, high):
         return search(data, target, mid + 1, high)
     else:
         return search(data, target, low, mid - 1)
-
-
-def generate_sorted_array(length):
-    low = 0
-    high = low + 5
-
-    arr = [0] * length
-    for i in range(len(arr)):
-        rand = randint(low, high)
-        arr[i] = rand
-        low = rand
-        high = low + 5
-
-    return arr
 
 
 def main():
