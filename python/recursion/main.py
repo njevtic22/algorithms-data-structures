@@ -1,4 +1,5 @@
-from array_sum import main as sum_main
+from array_sum import halved_main as halved_sum_main
+from array_sum import linear_main as sum_main
 from binary_search import main as binary_main
 from factorial import main as fact_main
 from lines import main as draw_main
@@ -13,18 +14,20 @@ def main():
                 "2. Draw lines\n" \
                 "3. Binary search\n" \
                 "4. Linear sum\n" \
-                "5. Reverse array\n" \
-                "6. Power 1 - multiplying each successive element\n" \
-                "7. Power 2 - half^power\n" \
+                "5. Halved sum\n" \
+                "6. Reverse array\n" \
+                "7. Power 1 - multiplying each successive element\n" \
+                "8. Power 2 - half^power\n" \
                 "0. Exit"
     menu = {
         1: fact_main,
         2: draw_main,
         3: binary_main,
         4: sum_main,
-        5: reverse_main,
-        6: power_1_main,
-        7: power_2_main
+        5: halved_sum_main,
+        6: reverse_main,
+        7: power_1_main,
+        8: power_2_main
     }
 
     while True:
