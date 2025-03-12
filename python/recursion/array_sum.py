@@ -11,6 +11,15 @@ def linear_sum(data, n):
 
 
 def halved_sum(data, low, high):
+    """
+    Calculates sum of array by calculating sums of its two halves.
+    Works in O(log(n)) time ?
+
+    :param data: input array
+    :param low: lower bound
+    :param high: upper bound
+    :return: sum of elements from lower bound up to upper bound
+    """
     if low == high:
         return data[low]
 
