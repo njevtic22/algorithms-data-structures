@@ -1,4 +1,4 @@
-from util import generate_sorted_array
+from src.util.arrays import generate_sorted_array
 
 
 def search(data, target, low, high):

@@ -1,6 +1,6 @@
 from time import time
 
-from util import generate_array
+from src.util.arrays import generate_array
 
 
 def linear_sum(data, n):

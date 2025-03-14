@@ -1,4 +1,4 @@
-from util import generate_sorted_array
+from src.util.arrays import generate_sorted_array
 
 
 def reverse_array(arr, low, high):
